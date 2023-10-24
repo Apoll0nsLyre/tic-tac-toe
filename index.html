@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Roboto:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <div class="main">
+            <div class="players">Player 1 : X Player 2 : O
+            </div>
+            <div class="buttons">
+                <button id="reset">Reset</button>
+                <button id="newgame">New Game</button>
+            </div>
+            <div class="board">
+                <div class="row">
+                    <div class="cell" id="0"></div>
+                    <div class="cell" id="1"></div>
+                    <div class="cell" id="2"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" id="3"></div>
+                    <div class="cell" id="4"></div>
+                    <div class="cell" id="5"></div>
+                </div>
+                <div class="row">
+                    <div class="cell" id="6"></div>
+                    <div class="cell" id="7"></div>
+                    <div class="cell" id="8"></div>
+                </div>
+            </div>
+            <div class="turn">
+                <h2>Turn: <span id="turn"></span></h2>
+            </div>
+            <h2 class="result"></h2>
+            <div class="score">
+                <h2>Score :</h2>
+                <div class="player1">
+                    <h3>Player 1 :</h3>
+                    <h3 id="score1"></h3>
+                </div>
+                <div class="player2">
+                    <h3>Player 2 :</h3>
+                    <h3 id="score2"></h3>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    color: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(54, 54, 52);
+    box-shadow: 0px 0px 10px -2px black;
+}
+.main{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.players{
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tilt Neon', sans-serif;
+    margin: 10px;
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(54, 54, 52);
+    color: lightgray;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.buttons button:hover{
+    background-color: rgb(153, 155, 158);
+    color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+.board{
+    margin-top:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: rgb(153, 155, 158);
+}
+
+.row{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+}
+.cell{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+    box-shadow: 0px 0px 10px 0px black;
+}
+.score{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.score div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: rgb(54, 54, 52);
+    color: lightgray;
+    box-shadow: 0px 0px 10px 0px black;
+}
+#score1{
+    padding-left: 10px;
+}
+#score2{
+    padding-left: 10px;
+}
+.result{
+    display: none;
+}
+
+
